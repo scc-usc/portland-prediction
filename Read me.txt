@@ -1,0 +1,3 @@
+timesteps is the length of the look back window for regression.
+A regression model is trained for each grid and at the end it will predict for the number of days ahead specified by predict_week_no, by repeatedly predicting for 1 day ahead and appending the predicted value as the next input
+The predictions are in predicted_grid in the form [x,y,week_number,day_ahead_number]
